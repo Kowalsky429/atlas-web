@@ -1,0 +1,70 @@
+// displaying components depented by resolution
+@media (max-width: 1079px){
+    .main-text{
+        margin-bottom: 25px;
+    }
+    .nav{
+        width: 100vw;
+    }
+    .menu{
+        width: 100vw;
+        left: -100%;
+        text-align: center;
+    }
+    .left-container{
+        width: 100%;
+        padding: 0px 10%;
+    }
+    .base-text{
+        text-align: center !important;
+        font-size: 30px;
+        line-height: 28px;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .next_page{
+        display: block !important;
+    }
+    .contact{
+        width: 100vw;
+        left: -100%;
+    }
+}
+@media (max-width: 730px){
+    .left-image{
+        grid-area: 5/1/8/8 !important;
+    }
+    .right-image{
+        display: none !important;
+    }
+}
+@media (max-width: 590px){
+    .left-container{
+        height: 110vh;
+    }
+}
+@media (max-width: 464px){
+    .contact__form{
+        input{
+            width: 200px;
+            height: 30px;
+        }
+    }
+}
+@media (max-width: 420px){
+    .left-container{
+        .main-text{
+            font-size: 42px !important;
+            margin-bottom: 10px;
+        }
+        .base-text{
+            font-size: 12px !important;
+        }
+        .menu{
+            &__list{
+                font-size: 25px !important;
+            }
+        }
+    }
+}

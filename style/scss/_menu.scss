@@ -1,0 +1,41 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100vh;
+    background: rgba(255,255,255,0.85);
+    transition: transform .3s ease-in;
+    flex-direction: column;
+    z-index: 2;
+    &__list{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    &__link{
+        margin: 40px 0;
+        text-transform: uppercase;
+        a{
+            position: relative;
+            color: $headerTextColor;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 110%;
+                width: 110%;
+                height: 4px;
+                background: $headerTextColor;
+                transition: transform .3s ease-in;
+                transform-origin: right;
+                transform: scaleX(0)
+            }
+            &:hover::before{
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+    }
+}
+.active{
+    transform: translateX(100%);
+}

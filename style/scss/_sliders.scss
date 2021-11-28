@@ -1,0 +1,38 @@
+.slider{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+}
+.slider-one{
+    background: rgba(3, 3, 3, 0.9);
+}
+.slider-two{
+    background: rgba(255, 255, 255, 0.7);
+}
+.opening-slider{
+    position: fixed;
+    z-index: 999;
+}
+.one{
+    bottom: -100%;
+    width: 40%;
+    height: 100vh;
+    background:rgb(23, 40, 75);
+}
+.two{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: calc((100% / 7) * 4);
+    background: rgba(0, 0, 0, 0.9);
+}
+.three{
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: calc((100% / 7) * 3);
+    background: rgba(0, 0, 0, 1);
+}

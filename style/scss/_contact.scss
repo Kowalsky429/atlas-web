@@ -1,0 +1,55 @@
+.contact{
+    position: fixed;
+    top: 0;
+    left: -60%;
+    width: 60%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    &__form{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 280px;
+            height: 40px;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        button{
+            width: 140px;
+            height: 40px;
+            margin: 10px auto;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            transition: all .9s ease-in-out;
+            &:hover{
+                background: #000;
+                color: $lightColor;
+                transition: all .2s ease-in-out;
+            }
+        }
+        .headline{
+            color: $lightColor;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .nextpage{
+            color: #FFF;
+            margin: 10px 0 20px 0;
+        }
+        .social-medias{
+            justify-content: space-evenly;
+            i{
+                cursor: pointer;
+                color:rgba(182, 169, 169, 0.904);
+                font-size: 25px;
+                &:hover{
+                    color: $lightColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.nav{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $lightColor;
+    padding: 15px 40px;
+    &__logo{
+        font-size: 32px;
+    }
+    &__menuIcon{
+        font-size: 35px;
+        z-index: 999;
+        i{
+            color: $headerTextColor;
+        }
+    }
+    & > *{
+        cursor: pointer;
+    }
+}

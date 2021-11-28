@@ -1,0 +1,42 @@
+@import '_variables.scss'; //variables properties
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+*:not(.fab){
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: $lightColor;
+    font-size: 18px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-container,
+.right-image,
+.menu,
+.contact,
+.social-medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// import files
+@import '_nav.scss'; // nav properties
+@import '_container.scss'; // container (left/right section) properties
+@import '_menu.scss'; // menu aside properties
+@import '_contact.scss'; // contact form properties
+@import '_sliders.scss'; // sliders properties
+@import '_mediaqueries.scss'; // media queries properties
